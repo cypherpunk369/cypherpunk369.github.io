@@ -1,6 +1,6 @@
 ---
 title: "A Cypherpunk's Manifesto"
-date: 2023-04-27T15:00:00-04:00
+date: 2023-27-04
 classes: wide
 image: "/assets/images/cypherpunks-manifesto.jpg"
 excerpt: "Cypherpunk's Manifesto - Eric Hughes 1993."
