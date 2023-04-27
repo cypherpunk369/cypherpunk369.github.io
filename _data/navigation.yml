@@ -3,4 +3,4 @@ docs:
   - title: Read Also
     children:
       - title: "A CypherPunk's Manifesto"
-        url: /manifesto/
+        url: /cypherpunks-manifesto/
