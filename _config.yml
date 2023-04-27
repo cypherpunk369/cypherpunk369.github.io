@@ -1,0 +1,96 @@
+# Cypher369 Config.yml
+#
+title: CypherPunk369
+email: cypherpunk369@proton.me
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+minimal_mistakes_skin: default
+search: true
+baseurl: "/"
+excerpt_separator: "<!-- end excerpt -->"
+url: "https://cypherpunk369.github.io"
+logo: "/assets/images/cypherpunk369.ico"
+author:
+  name     : "CypherPunk369"
+  avatar   : "/assets/images/CypherPunk369_PFP.jpg"
+  bio      : "Cypherpunk. Sovereign Individual."
+  email: cypherpunk369@proton.me
+  links:
+  - label: "Twitter"
+    icon: "fab fa-fw fa-twitter-square"
+    url: "https://twitter.com/"
+  - label: "GitHub"
+    icon: "fab fa-fw fa-github"
+    url: "https://github.com/cypherpunk369"
+
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 10 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+include:
+  - _pages
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+#footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/cypherpunk369/cypherpunk369.github.io"
+
+#default structure
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      share: true
+      sidebar:
+        nav: "docs"
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      sidebar:
+        nav: "docs"
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
